@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background color para toda la pagina */
+body {
+  background-color: #171717;
+  color: aliceblue;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+}
+main {
+  height: 50rem;
+  padding: 10%;
+  background-color: #ffffff;
+  color: #171717;
+}
+/* logo */
+.logo {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/* .olympo {
+    display: inline;
+    font-size: 100px;
+}
+.fit {
+    font-size: 50px;
+} */
+
+/* Top navigation menu */
+.top_nav {
+  list-style: none;
+  background-color: #ffd000;
+  /* position: fixed;
+    width: 100%; */
+}
+.top_nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+.top_nav li {
+  display: inline-block;
+  position: relative;
+}
+.top_nav ul a {
+  color: #171717;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  display: block;
+}
+.top_nav li:hover {
+  background-color: #ddd;
+}
+.top_nav a.active {
+  background-color: #ddd;
+}
+
+/* styling the login form */
+form {
+  border: 3px solid #f1f1f1;
+  width: 500px;
+  margin: 0 auto;
+}
+.loginform {
+  padding: 0 10%;
+}
+.info {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+.uname,
+.psw {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.login-btn {
+  background-color: #ffd000;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  /* display: block; */
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+.login-btn:hover {
+  opacity: 0.8;
+}
+.rmbr {
+  margin-left: 50%;
+  font-weight: bold;
+}
+.fgt {
+  padding: 16px 50px;
+  margin-top: 20px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+}
+.cancel-btn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+.cancel-btn:hover {
+  opacity: 0.8;
+}
+.fgt a {
+  font-weight: bold;
+  text-decoration: none;
+}

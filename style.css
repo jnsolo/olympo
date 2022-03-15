@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background color para toda la pagina */
+body {
+  background-color: #171717;
+  color: aliceblue;
+  font-family: "Oswald", sans-serif;
+}
+main {
+  padding: 10%;
+  background-color: #ffffff;
+  color: #171717;
+}
+/* Header logo and name */
+.header-logo {
+  text-align: center;
+  padding: 50px;
+  line-height: 4em;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+.logo {
+  display: block;
+}
+.olympo {
+  display: inline;
+  font-size: 5em;
+}
+.fit {
+  font-size: 250%;
+}
+/* Creating the Navigation menu */
+nav {
+  padding: 0px 20px;
+  background-color: #ffd000;
+  width: 100%;
+}
+nav ul {
+  list-style: none;
+}
+nav ul a {
+  color: #171717;
+  text-decoration: none;
+}
+.logo {
+  height: 7rem;
+}
+.top_nav li {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 5px;
+  border-bottom: 3px solid #ffd000;
+}
+.top_nav li a {
+  display: block;
+}
+.links:hover {
+  border-bottom: 3px solid #171717;
+}
+
+/* MOBILE MENU VIEW */
+.social {
+  display: none;
+}
+.top_nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Top navigation menu */
+/* 
+.top_nav {
+  list-style: none;
+  background-color: #ffd000;
+}
+.top_nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+.top_nav li {
+  display: inline-block;
+  position: relative;
+}
+.top_nav ul a {
+  color: #171717;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  display: block;
+}
+.top_nav li:hover {
+  background-color: #ddd;
+}
+.top_nav a.active {
+  background-color: #ddd;
+} 
+*/
+
+/* Carrusel slideshow */
+
+.carrusel {
+  position: relative;
+  margin: auto;
+}
+.slide {
+  width: 100%;
+}
+.gym {
+  width: 100%;
+  display: none;
+}
+.slideshow-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: block;
+}
+
+/* Next and previous buttons */
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  display: block;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* The dots indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.descripcion {
+  margin-bottom: 100px auto;
+  border: double #ddd;
+}
+/* creating imgs with link and a learn more button */
+/* .linked-imgs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20% auto;
+  position: relative;
+  text-align: center;
+}
+.inline-img {
+  display: inline-block;
+}
+.pics {
+  width: 300px;
+  height: 600px;
+  border-radius: 15px;
+}
+.caption {
+  font-size: 2rem;
+  font-weight: bold;
+  color: blue;
+  position: absolute;
+  bottom: 50%;
+  visibility: hidden;
+}
+.learn-more {
+  position: absolute;
+  bottom: 10%;
+  visibility: hidden;
+}
+.pics:hover {
+  opacity: 0.5;
+  border: 5px solid #ffd000;
+}
+.inline-img:hover .caption,
+.learn-more {
+  visibility: visible;
+} */

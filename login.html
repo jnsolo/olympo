@@ -6,47 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./Media/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style1.css">
-    <title>Olympo Fitness Center</title>
+    <title>Login - Olympo Fitness Center</title>
 </head>
 <body>
     <!-- ENCABEZADO -->
     <header>
-        <!-- LOGO -->
-        <div class="logo">
-            <img src="./Media/Olimpo-Logo-1-300x300.png" alt="">
+         <!-- LOGO -->
+         <div class="header-logo">
+            <img class="logo" src="./Media/Olimpo-Logo-1-300x300.png" alt="">
+            <h1 class="olympo">OLYMPO</h1>
+            <h3 class="fit">Fitness center</h3>
+
         </div>
         <!-- Navigation bar -->
-    <nav class="top_nav">
-        <ul>
-            <li><a href="./Index.html">Home</a></li>
-            <li><a href="#Reviews">Reviews</a></li>
-            <li><a href="#Location">Location</a></li>
-            <li><a href="#Plans">Fit Plans</a></li>
-            <li><a href="#About">About Us</a></li>
-            <li><a href="#Contact">Contact Us</a></li>
-            <li><a href="#Schedule">Schedule a trial class</a></li>
-            <li><a class="active" href="#Login">Login</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul class="top_nav">
+                <li class="home links"><a href="./Index.html">Home</a></li>
+                <li class="about links"><a href="#About">About Us</a></li>
+                <li class="contact links"><a href="./contact.html">Contact Us</a></li>
+                <li class="register links"><a href="#Register">Register</a></li>
+                <li class="current login links"><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <!-- Login form -->
-        <form action="" method="post">
-           <div class="loginform">
-                <label for="uname" class="info">Username</label>
-                <input class="uname" id="uname" type="text" placeholder="Enter Username" name="uname" required>
-                <label for="psw" class="info">Password</label>
-                <input class="psw" id="psw" type="password" placeholder="**********" name="psw" pattern=".{5,10}" title="Must contain 5 to 10 character" required>
+        <div class="lgf">
+            <form action="" method="post">
+            <div class="loginform">
+                    <label for="uname" class="info">Email or Username</label>
+                    <input class="uname" id="uname" type="text" placeholder="Enter Email or Username" name="uname" required>
+                    <label for="psw" class="info">Password</label>
+                    <input class="psw" id="psw" type="password" placeholder="**********" name="psw" pattern=".{5,10}" title="Must contain 5 to 10 character" required>
 
-                <input type="submit" class="login-btn" value="Login">
-                <input type="checkbox" class="rmbr" checked="checked" name="remember"> Remember me
-           </div>
-            <div class="fgt">
-                <button type="button" class="cancel-btn">Cancel</button>
-                <span class="fgt-psw"><a href="#">Forgot password?</a></span>
+                    <input type="submit" class="login-btn" value="Login">
+                    <input type="checkbox" class="rmbr" checked="checked" name="remember"> Remember me
             </div>
-        </form>
-    </main>
+                <div class="fgt">
+                    <button type="button" class="cancel-btn">Cancel</button>
+                    <span class="fgt-psw"><a href="#">Forgot password?</a></span>
+                </div>
+            </form>
+        </div>
+    </main> 
+</body>
+</html>

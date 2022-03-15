@@ -15,7 +15,6 @@ main {
   background-color: #ffffff;
   color: #171717;
 }
-
 /* MAKING IT RESPONSIVE FOR MOBILE AND DESKTOP */
 
 @media only screen and (max-width: 768px) {
@@ -30,6 +29,21 @@ main {
   .fit {
     display: none;
   }
+  .contenedor {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: repeat(4, 0.5fr);
+    grid-template-areas:
+      "scl"
+      "hrs"
+      "cntct"
+      "msg";
+    gap: 1rem;
+  }
 }
 @media only screen and (min-width: 768px) {
   .top_nav {
@@ -37,6 +51,20 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+  }
+  /* creating the grid area for contact info */
+  .contenedor {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: grid;
+    grid-template-columns: 4fr 3fr 4fr;
+    grid-template-rows: repeat(2, 0.8fr);
+    grid-template-areas:
+      "scl hrs cntct"
+      "msg msg msg";
+    gap: 1rem;
   }
 }
 /* Header logo and name */
@@ -90,78 +118,58 @@ nav ul a {
 .top_nav .current {
   border-bottom: 3px solid #171717;
 }
-
-/* styling the login form */
-.lgf {
-  flex: 3 1 0%;
+/* defining grid areas */
+.scl {
+  grid-area: scl;
+}
+.hrs {
+  grid-area: hrs;
+}
+.cntct {
+  grid-area: cntct;
+}
+.msg {
+  grid-area: msg;
+}
+/* removing dots from lists */
+ul li {
+  list-style: none;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
   display: flex;
-  justify-content: center;
-  padding: 10%;
-}
-
-form {
-  border: 3px solid #f1f1f1;
-  width: 500px;
-  max-width: 100%;
-}
-.loginform {
-  padding: 0 10%;
-}
-.info {
-  font-weight: bold;
-  font-size: 25px;
-  color: black;
-}
-.uname,
-.psw {
-  width: 100%;
-  padding: 10px 20px;
-  margin: 8px 0;
-  display: block;
+  flex-direction: column;
+  width: 90%;
+  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
-.login-btn {
+/* Style the submit button */
+input[type="submit"] {
   background-color: #ffd000;
-  color: black;
-  padding: 10px 20px;
+  color: #171717;
+  padding: 12px 20px;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
-  /* display: block; */
-  font-weight: bold;
-  font-family: "Oswald", sans-serif;
-  letter-spacing: 1px;
-  font-size: 15px;
 }
-.login-btn:hover {
+
+input[type="submit"]:hover {
   opacity: 0.8;
 }
-.rmbr {
-  margin-left: 50%;
-  font-weight: bold;
+
+/* Add a background color around the form */
+.msg {
+  text-align: left;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
-.fgt {
-  padding: 16px 50px;
-  margin-top: 20px;
-  background-color: #f1f1f1;
-  display: flex;
-  justify-content: space-between;
-}
-.cancel-btn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-family: "Oswald", sans-serif;
-  letter-spacing: 1px;
-  font-size: 15px;
-}
-.cancel-btn:hover {
-  opacity: 0.8;
-}
-.fgt a {
-  font-weight: bold;
-  text-decoration: none;
+.msg h1 {
+  text-align: center;
 }

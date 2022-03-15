@@ -11,9 +11,31 @@ body {
   font-family: "Oswald", sans-serif;
 }
 main {
-  padding: 10%;
+  padding: 0 10%;
   background-color: #ffffff;
   color: #171717;
+}
+/* MAKING IT RESPONSIVE FOR MOBILE AND DESKTOP */
+
+@media only screen and (max-width: 768px) {
+  .top_nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
+  .olympo,
+  .fit {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .top_nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 /* Header logo and name */
 .header-logo {
@@ -63,53 +85,40 @@ nav ul a {
 .links:hover {
   border-bottom: 3px solid #171717;
 }
-
-/* MOBILE MENU VIEW */
-.social {
-  display: none;
-}
-.top_nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+.top_nav .current {
+  border-bottom: 3px solid #171717;
 }
 
-/* Top navigation menu */
-/* 
-.top_nav {
-  list-style: none;
-  background-color: #ffd000;
+/* welcome section of the webpage */
+.descripcion {
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.5em;
+  padding-top: 10%;
+  text-align: center;
 }
-.top_nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  overflow: hidden;
+.descripcion hr {
+  border: none;
+  border-bottom: 5px solid #171717;
+  width: 250px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem;
 }
-.top_nav li {
-  display: inline-block;
-  position: relative;
+.descripcion p {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  line-height: 2.4rem;
 }
-.top_nav ul a {
-  color: #171717;
-  text-decoration: none;
-  font-size: 20px;
-  padding: 10px;
-  display: block;
+.name {
+  color: #ffd000;
 }
-.top_nav li:hover {
-  background-color: #ddd;
-}
-.top_nav a.active {
-  background-color: #ddd;
-} 
-*/
-
 /* Carrusel slideshow */
 
 .carrusel {
   position: relative;
-  margin: auto;
+  margin: 5% auto;
 }
 .slide {
   width: 100%;
@@ -170,21 +179,22 @@ nav ul a {
   background-color: #717171;
 }
 
-.descripcion {
-  margin-bottom: 100px auto;
-  border: double #ddd;
+/* membership plans section */
+.div-line {
+  display: flex;
+  flex-direction: row;
+}
+.div-line hr {
+  display: block;
 }
 /* creating imgs with link and a learn more button */
-/* .linked-imgs {
+.linked-imgs {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  margin: 20% auto;
+  margin: 10% auto;
   position: relative;
-  text-align: center;
-}
-.inline-img {
-  display: inline-block;
+  align-items: center;
 }
 .pics {
   width: 300px;
@@ -211,4 +221,4 @@ nav ul a {
 .inline-img:hover .caption,
 .learn-more {
   visibility: visible;
-} */
+}

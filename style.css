@@ -5,88 +5,38 @@
 }
 
 /* Background color para toda la pagina negro */
-body {
+/* body {
   background-color: #171717;
   color: aliceblue;
   font-family: "Oswald", sans-serif;
-}
+} */
 main {
-  padding: 0 10%;
   background-color: #ffffff;
   color: #171717;
+  /* padding: 0 10%; */
 }
-/* MAKING IT RESPONSIVE FOR MOBILE AND DESKTOP */
 
-@media only screen and (max-width: 768px) {
-  .top_nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-  }
-  .olympo,
-  .fit {
-    display: none;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .top_nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
-/* Header logo and name */
-.header-logo {
-  text-align: center;
-  padding: 50px;
-  line-height: 4em;
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-}
-.logo {
-  display: block;
-}
 .olympo {
-  display: inline;
-  font-size: 5em;
+  font-size: 3rem;
+  font-weight: bold;
 }
 .fit {
-  font-size: 250%;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
+/* .font-nav {
+  font-size: 1.5rem;
+} */
 /* Creating the Navigation menu */
 nav {
-  padding: 0px 20px;
   background-color: #ffd000;
-  width: 100%;
 }
-nav ul {
-  list-style: none;
-}
-nav ul a {
-  color: #171717;
-  text-decoration: none;
-}
-.logo {
-  height: 7rem;
-}
-.top_nav li {
-  font-size: 20px;
+.navbar-nav li:hover {
   font-weight: bold;
-  text-transform: uppercase;
-  padding: 15px 5px;
-  border-bottom: 3px solid #ffd000;
+  color: black;
 }
-.top_nav li a {
-  display: block;
-}
-.links:hover {
-  border-bottom: 3px solid #171717;
-}
-.top_nav .current {
-  border-bottom: 3px solid #171717;
+.active {
+  border-bottom: solid 3px black;
 }
 
 /* welcome section of the webpage */
@@ -113,6 +63,35 @@ nav ul a {
 }
 .name {
   color: #ffd000;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  margin-top: 0px;
+}
+.bi-youtube {
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #ff0000;
+}
+.bi-facebook {
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #4267b2;
+}
+.bi-instagram {
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #8a3ab9;
+}
+.legal {
+  margin-top: 30px;
 }
 /* Carrusel slideshow */
 
@@ -174,11 +153,6 @@ nav ul a {
   transition: background-color 0.6s ease;
 }
 
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
 /* membership plans section */
 .div-line {
   display: flex;
@@ -188,42 +162,17 @@ nav ul a {
   display: block;
 }
 /* creating imgs with link and a learn more button */
-.linked-imgs {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 10% auto;
-  position: relative;
-  align-items: center;
+.card {
+  background-color: #171717;
+  color: white;
 }
-.pics {
-  width: 300px;
-  height: 600px;
-  border-radius: 15px;
-}
-.caption {
-  font-size: 2rem;
-  font-weight: bold;
-  color: blue;
-  position: absolute;
-  bottom: 50%;
-  visibility: hidden;
-}
-.learn-more {
-  position: absolute;
-  bottom: 10%;
-  visibility: hidden;
-}
-.pics:hover {
-  opacity: 0.5;
-  border: 5px solid #ffd000;
-}
-.inline-img:hover .caption,
-.learn-more {
-  visibility: visible;
+.btn-plans {
+  background-color: #ffd000;
+  color: #171717;
+  border: #171717;
 }
 /* animaciones de fade in en el banner */
-.header-logo {
+/* .header-logo {
   margin-top: 25px;
   font-size: 21px;
   text-align: center;
@@ -263,13 +212,7 @@ nav ul a {
   to {
     opacity: 1;
   }
-}
-
-
-
-
-
-
+} */
 
 /* ESTILO DEL LOGIN SECTION */
 /* styling the login form */
@@ -347,8 +290,6 @@ form {
   text-decoration: none;
 }
 
-
-
 /* ESTILO DEL CONTACT US SECTION */
 /* creating the grid area for contact info */
 .contenedor {
@@ -364,110 +305,59 @@ form {
     "msg msg msg";
   gap: 1rem;
 }
-}
-/* Header logo and name */
-.header-logo {
-text-align: center;
-padding: 50px;
-line-height: 4em;
-display: flex;
-align-items: baseline;
-justify-content: center;
-}
-.logo {
-display: block;
-}
-.olympo {
-display: inline;
-font-size: 5em;
-}
-.fit {
-font-size: 250%;
-}
-/* Top navigation menu */
-nav {
-padding: 0px 20px;
-background-color: #ffd000;
-width: 100%;
-}
-nav ul {
-list-style: none;
-}
-nav ul a {
-color: #171717;
-text-decoration: none;
-}
-.logo {
-height: 7rem;
-}
-.top_nav li {
-font-size: 20px;
-font-weight: bold;
-text-transform: uppercase;
-padding: 15px 5px;
-border-bottom: 3px solid #ffd000;
-}
-.top_nav li a {
-display: block;
-}
-.links:hover {
-border-bottom: 3px solid #171717;
-}
-.top_nav .current {
-border-bottom: 3px solid #171717;
-}
+
 /* defining grid areas */
 .scl {
-grid-area: scl;
+  grid-area: scl;
 }
 .hrs {
-grid-area: hrs;
+  grid-area: hrs;
 }
 .cntct {
-grid-area: cntct;
+  grid-area: cntct;
 }
 .msg {
-grid-area: msg;
+  grid-area: msg;
 }
 /* removing dots from lists */
 ul li {
-list-style: none;
+  list-style: none;
 }
 /* Style inputs with type="text", select elements and textareas */
 input[type="text"],
 select,
 textarea {
-display: flex;
-flex-direction: column;
-width: 90%;
-padding: 12px;
-border: 1px solid #ccc;
-border-radius: 4px;
-margin-top: 6px;
-margin-bottom: 16px;
-resize: vertical;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 /* Style the submit button */
 input[type="submit"] {
-background-color: #ffd000;
-color: #171717;
-padding: 12px 20px;
-border: none;
-border-radius: 4px;
-cursor: pointer;
+  background-color: #ffd000;
+  color: #171717;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover {
-opacity: 0.8;
+  opacity: 0.8;
 }
 
 /* Add a background color around the form */
 .msg {
-text-align: left;
-border-radius: 5px;
-background-color: #f2f2f2;
-padding: 20px;
+  text-align: left;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 .msg h1 {
-text-align: center;
+  text-align: center;
 }

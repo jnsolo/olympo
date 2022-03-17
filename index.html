@@ -6,43 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./Media/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- link de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- links de Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <!-- Mis estilos -->
     <link rel="stylesheet" href="style.css">
     <title>Olympo Fitness Center</title>
 </head>
 <body>
-    <!-- ENCABEZADO 1 -->
-    <header>
-        <!-- LOGO -->
-        <div class="header-logo">
-            <img class="logo" src="./Media/Olimpo-Logo-1-300x300.png" alt="">
-            <h1 class="olympo">OLYMPO</h1>
-            <h3 class="fit">Fitness center</h3>
-
+        <!-- Bootstrap Navigation bar -->
+        <div class="bts-nav">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#"><span class="olympo">OLYMPO</span><span class="fit">Fitness center</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end font-nav fs-4" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">Login</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
         </div>
-        <!-- Navigation bar -->
-    <nav>
-        <ul class="top_nav">
-            <li class="current home links"><a href="#home">Home</a></li>
-            <li class="about links"><a href="#About">About Us</a></li>
-            <li class="contact links"><a href="./contact.html">Contact Us</a></li>
-            <li class="register links"><a href="#Register">Register</a></li>
-            <li class="login links"><a href="./login.html">Login</a></li>
-        </ul>
-        <!-- <ul class="social">
-            <li>Follow us </li>
-            <li><a href="#IG"></a></li>
-            <li><a href="#FB"></a></li>
-            <li><a href="#TW"></a></li>
-        </ul> -->
-    </nav>
-    </header>
     <main>
         <div class="descripcion">
             <h1>
                 welcome to the <span class="name">olympo</span>
             </h1>
             <hr>
+            <!-- Brief description about the project -->
             <p>
                 we have created a space for you with teams and specialized coaches to bring you a fun and 
                 efective entertainment. Our main objective is to improve the quality of your life 
@@ -51,52 +55,58 @@
             </p>
         </div>
         <!-- Carrusel de fotos con desplazamiento -->
-        <section class="carrusel">
-            <div class="Slideshow-container">
-                <img src="./Media/training-load-960x540.jpg" alt="crossfit" class="gym" style="">
-                <img src="./Media/rise-gym-wework046-hdr-edit-full-res-copy-1549045104.jpg" alt="gym" class="slide">
-            
-            <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <!-- The dots/circles -->
-            <div class="dots_circles" style="text-align: center;">
-                <span class="dot active" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>             
-            </div>
-        <!-- Brief description about the project -->
-        </section>
-       
-        <!-- Membership plans -->
-        
-        <div class="div-line">
-                <hr>
-                <span>Membership Plans</span>
-                <hr>
+        <div class="container">
+            <section class="carrusel">
+                <div class="Slideshow-container">
+                    <img src="./Media/training-load-960x540.jpg" alt="crossfit" class="gym">
+                    <img src="./Media/rise-gym-wework046-hdr-edit-full-res-copy-1549045104.jpg" alt="gym" class="slide">
+                
+                <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <!-- The dots/circles -->
+                <div class="dots_circles" style="text-align: center;">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>             
+                </div>
+            </section>
         </div>
-        <section class="linked-imgs">
-            <div class="inline-img">
-                <img src="./Media/220px-Crossfit.png" alt="" class="pics">
-                <div class="caption">Challenge yourself</div>
-                <div class="learn-more"><button>Learn More</button></div>
-            </div>
-            <div class="inline-img">
-                <img src="./Media/6bb2a6119e1e50333208bf26a0826a75.jpg" alt="" class="pics">
-                <div class="caption">Challenge yourself</div>
-                <div class="learn-more"><button>Learn More</button></div>
-            </div>
-            <div class="inline-img">
-                <img src="./Media/e731c70c61fb48e8bb9371a3a0abc520.jpg" alt="" class="pics">
-                <div class="caption">Challenge yourself</div>
-                <div class="learn-more"><button>Learn More</button></div>
+        <!-- Membership plans -->
+        <section class="container-fluid mt-5 mb-5 mbr-plans">
+            <h1 class="text-center h2 mt-5">Membership plans</h1>
+            <div class="row justify-content-around">
+                <div class="card col-sm-12 col-lg-4" style="width: 18rem;">
+                    <img src="./Media/caras-olimpoMesa-de-trabajo-7-zeus.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Zeus suscription</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary btn-plans">Learn more</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 col-lg-4" style="width: 18rem;">
+                    <img src="./Media/caras-olimpoMesa-de-trabajo-7-poseidon.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Poseidon suscription</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary btn-plans">Learn more</a>
+                    </div>
+                </div>
+                <div class="card col-sm-12 col-lg-4" style="width: 18rem;">
+                    <img src="./Media/caras-olimpoMesa-de-trabajo-7-hades.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Hades suscription</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary btn-plans">Learn more</a>
+                    </div>
+                </div>
             </div>
         </section>
         <!--Contact us menu scrolleable-->
-        <aside>
+        <!-- <aside>
 
-        </aside>
+        </aside> -->
         <!-- Cuadros de Imagenes con Resumen-->
         <section>
             <div class="crew_pic">
@@ -114,46 +124,49 @@
         <section>
 
         </section>
-        <!-- Become a God contact us button-->
-        <div class="Become_a_god">
-            <a href="#contacus" class="button">Become a God</a>
-        </div>
     </main>
+    <!-- Bootstrap Footer with bts grids -->
     <footer>
-        <!-- Horario -->
-        <div class="office_hours">
-            Office hours:
-            <ul>
-                <li>Mon 6:00 am - 9:00 pm</li>
-                <li>Tue 6:00 am - 9:00 pm</li>
-                <li>Wed 6:00 am - 9:00 pm</li>
-                <li>Thu 6:00 am - 9:00 pm</li>
-                <li>Fri 6:00 am - 9:00 pm</li>
-                <li>Sat 8:00 am - 12:00 pm</li>
-            </ul>
-        </div>
-        <!-- Menu footer -->
-        <div class="bot_nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-        </div>
-        <!-- Logo centrado -->
-        <div class="logo">
-            <img src="./Media/eCniYKot_400x400.jpg" alt="">
-        </div>
-        <!-- Legal y copyright -->
-        <div class="legal">
-            <p>Copyright 2022 © All rights reserved.</p>
-            <a href="#ppolicy">Privacy Policy</a>
-        </div>
-        <!-- Socialmedia -->
-        <a href="#twitter"><img src="" alt="">Twitter</a>
-        <a href="#facebook"><img src="" alt="">Facebook</a>
-        <a href="#instagram"><img src="" alt="">Instagram</a>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                        <div class="office_hours">
+                            Office hours:
+                            <ul>
+                                <li>Mon 6:00 am - 9:00 pm</li>
+                                <li>Tue 6:00 am - 9:00 pm</li>
+                                <li>Wed 6:00 am - 9:00 pm</li>
+                                <li>Thu 6:00 am - 9:00 pm</li>
+                                <li>Fri 6:00 am - 9:00 pm</li>
+                                <li>Sat 8:00 am - 12:00 pm</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                        <!-- Logo centrado -->
+                        <div class="logo">
+                            <img src="./Media/Olimpo-Logo-1-300x300.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 d-flex flex-column justify-content-center">
+                        <div class="sclm">
+                            <!-- Socialmedia -->
+                            <h4>FOLLOW US</h4>
+                            <a href="#youtube" target="_blank"><i class="bi bi-youtube fs-2"></i></a>
+                            <a href="#facebook" target="_blank"><i class="bi bi-facebook fs-2"></i></a>
+                            <a href="#instagram" target="_blank"><i class="bi bi-instagram fs-2"></i></a>
+                        </div>
+                        <!-- Legal y copyright -->
+                        <div class="legal">
+                            <a href="#ppolicy">Privacy Policy</a>
+                            <p>Copyright 2022 © All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
 

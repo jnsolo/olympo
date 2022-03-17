@@ -5,28 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./Media/favicon-32x32.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- link de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- links de Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <!-- Mis estilos -->
     <link rel="stylesheet" href="style.css">
-    <title>Contact - Olympo Fitness Center</title>
+    <title>Contact</title>
 </head>
 <body>
     <header>
-        <!-- LOGO -->
-        <div class="header-logo">
-            <img class="logo" src="./Media/Olimpo-Logo-1-300x300.png" alt="">
-            <h1 class="olympo">OLYMPO</h1>
-            <h3 class="fit">Fitness center</h3>
-        </div>
-            <!-- Navigation bar -->
+        
+        <!-- Navigation bar -->
         <nav>
-            <ul class="top_nav">
-                <li class="home links"><a href="./index.html">Home</a></li>
-                <li class="about links"><a href="#About">About Us</a></li>
-                <li class=" current contact links"><a href="#Contact">Contact Us</a></li>
-                <li class="register links"><a href="#Register">Register</a></li>
-                <li class="login links"><a href="./login.html">Login</a></li>
-            </ul>
+            <div class="bts.nav">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><span class="olympo">OLYMPO</span><span class="fit">Fitness center</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end fs-4" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./contact.html">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html">Login</a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+            </div>
             <!-- <ul class="social">
                 <li>Follow us </li>
                 <li><a href="#IG"></a></li>
@@ -35,7 +50,7 @@
             </ul> -->
         </nav>
     </header>
-        <main>
+    <main>
             <div class="contenedor">
                 <div class="scl">
                     <h1>Follow us</h1>
@@ -90,8 +105,48 @@
                       </form>
                 </div>
             </div>
+    </main>
+    <!-- Bootstrap Footer with bts grids -->
     <footer>
-
-    </footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                    <div class="office_hours">
+                        Office hours:
+                        <ul>
+                            <li>Mon 6:00 am - 9:00 pm</li>
+                            <li>Tue 6:00 am - 9:00 pm</li>
+                            <li>Wed 6:00 am - 9:00 pm</li>
+                            <li>Thu 6:00 am - 9:00 pm</li>
+                            <li>Fri 6:00 am - 9:00 pm</li>
+                            <li>Sat 8:00 am - 12:00 pm</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4 d-flex justify-content-center">
+                    <!-- Logo centrado -->
+                    <div class="logo">
+                        <img src="./Media/Olimpo-Logo-1-300x300.png" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4 d-flex flex-column justify-content-center">
+                    <div class="sclm">
+                        <!-- Socialmedia -->
+                        <h4>FOLLOW US</h4>
+                        <a href="#youtube" target="_blank"><i class="bi bi-youtube fs-2"></i></a>
+                        <a href="#facebook" target="_blank"><i class="bi bi-facebook fs-2"></i></a>
+                        <a href="#instagram" target="_blank"><i class="bi bi-instagram fs-2"></i></a>
+                    </div>
+                    <!-- Legal y copyright -->
+                    <div class="legal">
+                        <a href="#ppolicy">Privacy Policy</a>
+                        <p>Copyright 2022 © All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>

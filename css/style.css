@@ -40,6 +40,15 @@ nav .fit {
   }
 }
 
+@media screen and (max-width: 992px) {
+  nav .nav-mob {
+    text-align: center;
+  }
+  nav .nav-mob a {
+    border: none;
+  }
+}
+
 /* Carrusel slideshow */
 .carrusel {
   position: relative;

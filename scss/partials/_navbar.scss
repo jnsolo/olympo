@@ -19,4 +19,12 @@ nav {
       display: none;
     }
   }
+  @media screen and (max-width: 992px) {
+    .nav-mob {
+      text-align: center;
+      a {
+        border: none;
+      }
+    }
+  }
 }

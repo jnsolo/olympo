@@ -88,7 +88,20 @@ footer {
   text-align: center;
   margin-left: 5px;
   margin-right: 5px;
-  color: #8a3ab9;
+  background: -webkit-linear-gradient(
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040,
+    #f77737,
+    #fcaf45,
+    #ffdc80
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .legal {
   margin-top: 30px;

@@ -1,0 +1,22 @@
+nav {
+  background-color: #ffd000;
+
+  .navbar-nav li:hover {
+    font-weight: bold;
+    color: black;
+  }
+  .active {
+    border-bottom: solid 3px black;
+  }
+  .olympo {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .fit {
+    font-size: 1.5rem;
+    font-weight: bold;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}

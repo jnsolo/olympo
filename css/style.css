@@ -140,28 +140,63 @@ nav .fit {
   color: #ffd000;
 }
 
-/* creating imgs with link and a learn more button */
-.card {
+.mbr-plans h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 992px) {
+  .mbr-plans h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mbr-plans h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mbr-plans h1 {
+    font-size: 1.6rem;
+  }
+}
+
+.mbr-plans .card {
   background-color: #171717;
   color: white;
 }
 
-.btn-plans {
+.mbr-plans .btn-plans {
   background-color: #ffd000;
   color: #171717;
   border: #171717;
 }
 
-/* creating imgs with link and a learn more button */
-.card {
-  background-color: #171717;
-  color: white;
+.faq h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
 }
 
-.btn-plans {
-  background-color: #ffd000;
-  color: #171717;
-  border: #171717;
+@media screen and (max-width: 992px) {
+  .faq h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faq h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .faq h1 {
+    font-size: 1.6rem;
+  }
 }
 
 /* ESTILO DEL CONTACT US SECTION */

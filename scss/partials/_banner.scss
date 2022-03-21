@@ -4,27 +4,79 @@
   font-weight: bold;
   line-height: 1.5em;
   padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: black;
+  color: white;
+  &-ani {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    -o-animation: fadein 2s;
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-o-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   h1 {
     text-align: center;
     font-size: 5rem;
+    @media screen and (max-width: 992px) {
+      font-size: 3.5rem;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 2.6rem;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 1.6rem;
+    }
   }
   p {
     padding: 0.5rem;
     font-size: 1.5rem;
     margin-top: 2rem;
     line-height: 2.4rem;
-    text-align: justify;
-  }
-  .name {
-    color: #ffd000;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    @media screen and (max-width: 992px) {
+      font-size: 1.5rem;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 1.3rem;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 0.8rem;
+    }
   }
 }
-
-/* membership plans section */
-.div-line {
-  display: flex;
-  flex-direction: row;
-  hr {
-    display: block;
-  }
+.name {
+  color: #ffd000;
 }

@@ -1,0 +1,22 @@
+@mixin bg-btn() {
+    background-color: #ffd000;
+    color: #171717;
+    border: #171717;
+    font-weight: bold;
+}
+
+@mixin o-btn() {
+    background-color: #ffd000;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+  font-size: 15px;
+  border-radius: 5px;
+  &:hover {
+    opacity: 0.8;
+  }
+}

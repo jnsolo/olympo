@@ -47,12 +47,7 @@ textarea {
 }
 /* Style the submit button */
 input[type="submit"] {
-  background-color: #ffd000;
-  color: #171717;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  @include o-btn;
 }
 
 input[type="submit"]:hover {

@@ -18,8 +18,6 @@
     color: white;
   }
   .btn-plans {
-    background-color: #ffd000;
-    color: #171717;
-    border: #171717;
+    @include bg-btn;
   }
 }

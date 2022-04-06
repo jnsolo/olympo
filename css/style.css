@@ -8,7 +8,6 @@
 main {
   background-color: #ffffff;
   color: #171717;
-  /* padding: 0 10%; */
 }
 
 nav {
@@ -49,7 +48,6 @@ nav .fit {
   }
 }
 
-/* welcome section of the webpage */
 .descripcion {
   text-transform: uppercase;
   font-weight: bold;
@@ -173,6 +171,7 @@ nav .fit {
   background-color: #ffd000;
   color: #171717;
   border: #171717;
+  font-weight: bold;
 }
 
 .faq h1 {
@@ -270,11 +269,19 @@ textarea {
 /* Style the submit button */
 input[type="submit"] {
   background-color: #ffd000;
-  color: #171717;
-  padding: 12px 20px;
+  color: black;
+  padding: 10px 20px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
 }
 
 input[type="submit"]:hover {
@@ -293,8 +300,6 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
-/* ESTILO DEL LOGIN SECTION */
-/* styling the login form */
 .lgf {
   -webkit-box-flex: 3;
       -ms-flex: 3 1 0%;
@@ -334,7 +339,7 @@ form {
   border-radius: 5px;
 }
 
-.login-btn {
+.login-btn, .cancel-btn {
   background-color: #ffd000;
   color: black;
   padding: 10px 20px;
@@ -347,8 +352,13 @@ form {
   font-size: 15px;
 }
 
-.login-btn:hover {
+.login-btn:hover, .cancel-btn:hover {
   opacity: 0.8;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  border-radius: 5px;
 }
 
 .rmbr {
@@ -366,22 +376,6 @@ form {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.cancel-btn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-family: "Oswald", sans-serif;
-  letter-spacing: 1px;
-  font-size: 15px;
-}
-
-.cancel-btn:hover {
-  opacity: 0.8;
 }
 
 .fgt a {
@@ -437,47 +431,4 @@ footer .bi-instagram:hover {
 footer .legal {
   margin-top: 30px;
 }
-
-/* animaciones de fade in en el banner */
-/* .header-logo {
-    margin-top: 25px;
-    font-size: 21px;
-    text-align: center;
-    animation: fadein 2s;
-    -moz-animation: fadein 2s;
-    -webkit-animation: fadein 2s;
-    -o-animation: fadein 2s;
-  }
-  @keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @-moz-keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @-o-keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  } */
 /*# sourceMappingURL=style.css.map */

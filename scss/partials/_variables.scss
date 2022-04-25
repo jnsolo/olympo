@@ -20,3 +20,35 @@
     opacity: 0.8;
   }
 }
+
+@mixin bfb {
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #4267b2;
+}
+@mixin byt {
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #ff0000;
+}
+@mixin big {
+  text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+      background: -webkit-linear-gradient(
+        #405de6,
+        #5851db,
+        #833ab4,
+        #c13584,
+        #e1306c,
+        #fd1d1d,
+        #f56040,
+        #f77737,
+        #fcaf45,
+        #ffdc80
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}

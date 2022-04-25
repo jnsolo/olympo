@@ -1,35 +1,30 @@
 /* ESTILO DEL CONTACT US SECTION */
 /* creating the grid area for contact info */
-.contenedor {
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  display: grid;
-  grid-template-columns: 4fr 3fr 4fr;
-  grid-template-rows: repeat(2, 0.8fr);
-  grid-template-areas:
-    "scl hrs cntct"
-    "msg msg msg";
-  gap: 1rem;
-}
 
-/* defining grid areas */
-.scl {
-  grid-area: scl;
-}
-.hrs {
-  grid-area: hrs;
-}
-.cntct {
-  grid-area: cntct;
-}
-.msg {
-  grid-area: msg;
-}
 /* removing dots from lists */
-ul li {
+.ctc{
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+ul{
   list-style: none;
+}
+.scl {
+  display: flex;
+  justify-content: space-around;
+  li {
+    list-style: none;
+    display: inline-block;
+    .bi-facebook{
+      @include bfb;
+    }
+    .bi-youtube{
+      @include byt
+    }
+    .bi-instagram{
+      @include big
+    }
+  }
 }
 /* Style inputs with type="text", select elements and textareas */
 input[type="text"],
@@ -48,11 +43,11 @@ textarea {
 /* Style the submit button */
 input[type="submit"] {
   @include o-btn;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
-input[type="submit"]:hover {
-  opacity: 0.8;
-}
 
 /* Add a background color around the form */
 .msg {
@@ -60,7 +55,7 @@ input[type="submit"]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-}
-.msg h1 {
-  text-align: center;
+  h1 {
+    text-align: center;
+  }
 }

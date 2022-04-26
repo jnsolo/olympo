@@ -3,30 +3,30 @@
   display: flex;
   justify-content: center;
   padding: 10%;
+  .lgn {
+    border: 3px solid #f1f1f1;
+    width: 500px;
+    max-width: 100%;
+  }
+  .loginform{
+    padding: 0 10%
+  }
+  .info {
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+  }
+  .uname,
+  .psw {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
 }
 
-form {
-  border: 3px solid #f1f1f1;
-  width: 500px;
-  max-width: 100%;
-}
-.loginform {
-  padding: 0 10%;
-}
-.info {
-  font-weight: bold;
-  font-size: 25px;
-  color: black;
-}
-.uname,
-.psw {
-  width: 100%;
-  padding: 10px 20px;
-  margin: 8px 0;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
 .login-btn {
   background-color: #ffd000;
   color: black;

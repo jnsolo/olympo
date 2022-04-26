@@ -8,6 +8,7 @@
 main {
   background-color: #ffffff;
   color: #171717;
+  padding-bottom: 10%;
 }
 
 nav {
@@ -311,11 +312,18 @@ nav .fit {
 }
 
 /* ESTILO DEL CONTACT US SECTION */
-/* creating the grid area for contact info */
-/* removing dots from lists */
+h2 {
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+}
+
 .ctc {
   padding-top: 5%;
   padding-bottom: 10%;
+}
+
+.ctc h2 {
+  border-bottom: 1px solid #dfdfdf;
 }
 
 ul {
@@ -358,7 +366,61 @@ ul {
   -webkit-text-fill-color: transparent;
 }
 
+.ctcinfo li {
+  padding: 1% 0;
+}
+
+.ctcinfo li iframe {
+  max-width: 100%;
+  padding-top: 5%;
+}
+
+.faq {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.faq h2 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.questions {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-left: 1px solid #dfdfdf;
+}
+
+@media screen and (max-width: 992px) {
+  .questions {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .questions {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .questions {
+    border: none;
+  }
+}
+
+.questions li {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
 /* Style inputs with type="text", select elements and textareas */
+.qfrm {
+  padding-top: 5%;
+}
+
 input[type="text"],
 select,
 textarea {
@@ -369,7 +431,7 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 90%;
+  width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -400,18 +462,6 @@ input[type="submit"]:hover {
   opacity: 0.8;
 }
 
-/* Add a background color around the form */
-.msg {
-  text-align: left;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.msg h1 {
-  text-align: center;
-}
-
 .lgf {
   -webkit-box-flex: 3;
       -ms-flex: 3 1 0%;
@@ -425,24 +475,24 @@ input[type="submit"]:hover {
   padding: 10%;
 }
 
-form {
+.lgf .lgn {
   border: 3px solid #f1f1f1;
   width: 500px;
   max-width: 100%;
 }
 
-.loginform {
+.lgf .loginform {
   padding: 0 10%;
 }
 
-.info {
+.lgf .info {
   font-weight: bold;
   font-size: 25px;
   color: black;
 }
 
-.uname,
-.psw {
+.lgf .uname,
+.lgf .psw {
   width: 100%;
   padding: 10px 20px;
   margin: 8px 0;
